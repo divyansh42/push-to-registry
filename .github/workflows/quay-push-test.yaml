@@ -39,7 +39,7 @@ jobs:
         uses: redhat-actions/buildah-build@v2
         with:
           image: debian
-          tags: bullseye v1.1 v3
+          tags: v1.1 v3 bullseye
           base-image: docker.io/debian:bullseye
           entrypoint: |
             bash
