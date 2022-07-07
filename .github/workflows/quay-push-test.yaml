@@ -48,7 +48,7 @@ jobs:
           oci: true
 
       - run: buildah images
-      - run: buildah image inspect debian:bullseye
+      - run: podman image inspect debian:bullseye
 
       # Push the image to Quay.io (Image Registry)
       - name: Push To Quay
